@@ -2,7 +2,7 @@ name: SAP CF APP 保活
 
 on:
   schedule:
-    - cron: "15,35,55 0 * * *"   # UTC 时间，每天 0:15、0:35、0:55
+#    - cron: "15,35,55 0 * * *"   # UTC 时间，每天 0:15、0:35、0:55   如需启动自动保活请取消此行注释
   workflow_dispatch:
 
 jobs:
