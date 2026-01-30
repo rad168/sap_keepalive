@@ -9,7 +9,7 @@ CF_SPACE="your_space"
 CF_APP="your_app_name"
 # ==========================
 
-LOG_FILE="/root/cf_keepalive.log"
+LOG_FILE="/root/sap_keepalive.log"
 DATE=$(date "+%Y-%m-%d %H:%M:%S")
 
 echo "[$DATE] 开始检查 CF 应用状态" >> $LOG_FILE
