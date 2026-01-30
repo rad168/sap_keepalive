@@ -31,6 +31,7 @@
 ```bash
 cf t
 cf a
+```
 
 ---
 
@@ -64,11 +65,13 @@ sudo apt update
 sudo apt install -y wget
 wget -q -O cf-cli.deb "https://packages.cloudfoundry.org/stable?release=debian64&source=github"
 sudo dpkg -i cf-cli.deb
+```
 
 验证安装：
 
 ```bash
 cf -v
+```
 
 ---
 
@@ -78,7 +81,7 @@ cf -v
 
 ```bash
 nano sap.sh
-
+```
 
 2️⃣ 填写你的 Cloud Foundry 信息（示例）：
 
@@ -89,7 +92,7 @@ CF_PASSWORD="your_password"
 CF_ORG="your_org"
 CF_SPACE="your_space"
 CF_APP="your_app_name"
-
+```
 
 ⚠️ 注意：
 
@@ -103,6 +106,7 @@ CF_APP="your_app_name"
 
 ```bash
 chmod +x sap.sh
+```
 
 ---
 
@@ -110,7 +114,7 @@ chmod +x sap.sh
 
 ```bash
 ./sap.sh
-
+```
 
 如果配置正确，你会看到应用状态检查与启动日志输出。
 
@@ -120,10 +124,10 @@ chmod +x sap.sh
 
 ```bash
 crontab -e
-
+```
 
 按 UTC 时间 每天 0:15 / 0:35 / 0:55 执行：
 
 ```bash
 15,35,55 0 * * * /root/sap.sh
-
+```
