@@ -34,7 +34,7 @@ cf a
 
 ---
 
-## sap.sh 使用说明
+# sap.sh 使用说明
 
 sap.sh 是用于在 VPS / 本地服务器 上运行的 SAP Cloud Foundry 应用自动保活脚本，可替代 GitHub Actions，避免定时任务不准时的问题。
 
