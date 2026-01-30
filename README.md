@@ -32,9 +32,13 @@
 cf t
 cf a
 
+---
+
 ## sap.sh 使用说明
 
 sap.sh 是用于在 VPS / 本地服务器 上运行的 SAP Cloud Foundry 应用自动保活脚本，可替代 GitHub Actions，避免定时任务不准时的问题。
+
+---
 
 ##  一、功能说明
 
@@ -44,6 +48,8 @@ sap.sh 主要完成以下工作：
 检查目标应用运行状态
 当应用 未处于 running 状态 时自动执行 cf start
 支持配合 cron 定时执行，实现长期稳定保活
+
+---
 
 ## 二、运行环境要求
 
@@ -63,6 +69,8 @@ sudo dpkg -i cf-cli.deb
 
 ```bash
 cf -v
+
+---
 
 ## 三、sap.sh 配置方法
 
@@ -89,10 +97,14 @@ CF_APP="your_app_name"
 
 账号密码仅保存在你自己的 VPS 上，不经过第三方平台
 
+---
+
 ## 四、赋予执行权限
 
 ```bash
 chmod +x sap.sh
+
+---
 
 ## 五、手动运行测试（推荐先执行一次）
 
